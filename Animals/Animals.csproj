@@ -16,6 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\Products\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Products\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Products\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Products\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Products\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Areas\Admin\Views\_ViewImports.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

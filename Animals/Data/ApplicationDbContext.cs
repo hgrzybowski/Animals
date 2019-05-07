@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Animals.Models;
+﻿using Animals.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,5 +11,9 @@ namespace Animals.Data
         {
         }
         public DbSet<ProductTypes> ProductTypes { get; set; }
+
+        public DbSet<SpecialTags> SpecialTags { get; set; }
+
+        public DbSet<Products> Products { get; set; }
     }
 }
