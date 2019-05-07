@@ -8,6 +8,7 @@ using Animals.Models;
 
 namespace Animals.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         public IActionResult Index()
