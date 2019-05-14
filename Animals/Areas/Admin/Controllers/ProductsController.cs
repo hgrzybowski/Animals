@@ -2,7 +2,6 @@
 using Animals.Models;
 using Animals.Models.ViewModel;
 using Animals.Utility;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
