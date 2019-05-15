@@ -2,6 +2,7 @@
 using Animals.Models;
 using Animals.Models.ViewModel;
 using Animals.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,9 +10,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GraniteHouse.Controllers
+namespace Animals.Controllers
 {
-    //[Authorize(Roles = SD.SuperAdminEndUser)]
+    [Authorize(Roles = SD.SuperAdminEndUser)]
 
     [Area("Admin")]
     public class ProductsController : Controller

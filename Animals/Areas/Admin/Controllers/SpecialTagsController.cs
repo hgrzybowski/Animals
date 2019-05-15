@@ -1,12 +1,14 @@
 ﻿using Animals.Data;
 using Animals.Models;
+using Animals.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Animals.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = SD.SuperAdminEndUser)]
+    [Authorize(Roles = SD.SuperAdminEndUser)]
     [Area("Admin")]
     public class SpecialTagsController : Controller
     {
