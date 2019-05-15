@@ -38,6 +38,7 @@ namespace Animals
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
 
+            services.AddScoped<IDbInitializer, DbInitializer>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -50,7 +51,7 @@ namespace Animals
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -67,7 +68,7 @@ namespace Animals
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-           
+            dbInitializer.Initialize();
             app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes =>
