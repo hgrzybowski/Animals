@@ -12,7 +12,9 @@ namespace Animals.Data.Migrations
             migrationBuilder.Sql("INSERT INTO SpecialTags (Name) VALUES ('zaprzęg')");
             migrationBuilder.Sql("INSERT INTO ProductTypes (Name) VALUES ('krwi angielskiej')");
 
-            //migrationBuilder.Sql("INSERT INTO Products (Name,Price,Available,ProductTypeId,SpecialTagsID) VALUES ('Karino',2,1,1,1)");
+            migrationBuilder.Sql("INSERT INTO Products (Name,Price,Available,ShadeColor,ProductTypeId,SpecialTagsID) VALUES ('Karino',2222,1,'gray',1,1)");
+            migrationBuilder.Sql("INSERT INTO Products (Name,Price,Available,ShadeColor,ProductTypeId,SpecialTagsID) VALUES ('Elpasso',5555,1,'biały',1,2)");
+            migrationBuilder.Sql("INSERT INTO Products (Name,Price,Available,ShadeColor,ProductTypeId,SpecialTagsID) VALUES ('Opty',2545,1,'szary',2,1)");
 
         }
 
@@ -21,7 +23,7 @@ namespace Animals.Data.Migrations
             migrationBuilder.Sql("DLETE FROM ProductTypes");
             
             migrationBuilder.Sql("DLETE FROM SpecialTags");
-            //migrationBuilder.Sql("DLETE FROM Products");
+            migrationBuilder.Sql("DLETE FROM Products");
         }
     }
 }
