@@ -43,7 +43,7 @@ namespace Animals.Data
 
             await _userManager.AddToRoleAsync(user, SD.SuperAdminEndUser);
         }
-            
+
 
     }
 }
