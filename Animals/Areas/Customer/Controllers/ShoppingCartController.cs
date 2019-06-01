@@ -31,7 +31,8 @@ namespace Animals.Areas.Customer.Controllers
         public async  Task<IActionResult> Index()
         {
             List<int> lstShoppingCart = HttpContext.Session.Get<List<int>>("ssShoppingCart");
-            if(lstShoppingCart.Count >0)
+            //if(lstShoppingCart.Count >0)
+            if(lstShoppingCart !=null)
             {
                 foreach(int cartItem in lstShoppingCart)
                 {

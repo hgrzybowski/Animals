@@ -4,6 +4,7 @@ using Animals.Models.ViewModel;
 using Animals.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -94,7 +95,7 @@ namespace Animals.Areas.Admin.Controllers
                 }
                 catch (Exception ex)
                 {
-
+                    return RedirectToAction(ex.Message);
                 }
 
             }
