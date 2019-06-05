@@ -30,8 +30,8 @@ namespace Animals.Controllers
             _hostingEnvironment = hostingEnvironment;
             ProductsVM = new ProductsViewModel()
             {
-                ProductTypes = _db.ProductTypes.ToList(),
-                SpecialTags = _db.SpecialTags.ToList(),
+                Race = _db.ProductTypes.ToList(),
+                Features = _db.SpecialTags.ToList(),
                 Products = new Animals.Models.Products()
             };
 
