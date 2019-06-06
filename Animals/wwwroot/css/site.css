@@ -38,4 +38,10 @@ body {
 .card-img-top {
     object-fit: cover !important;
 }
+.rounded {
+    background-color: #F7F7F7 !important;
+}
+.text-info {
+    color: #343A40 !important;
+}
 
